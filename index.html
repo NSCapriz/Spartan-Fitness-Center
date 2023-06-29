@@ -4,70 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spartan Fitness Center</title>
+    <!-----------------------FAVICON----------------------->
+    <link rel="shortcut icon" href="img/favicono.ico" type="Logo icono">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href=""><img src="img/positivo-fondo-blanco.png" alt="Logo Spartan"></a>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienessomos">Quienes somos</a></li>
-                <li><a href="#registro">Registrate</a></li>
-                <li><a href="#actividades">Actividades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+    <header class="container-fluid header__container">
+        <!---------------NAVBAR------------------------->
+        <nav class="navbar navbar-expand-md py-2">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/positivo-fondo-blanco.png" alt="logo Spartan">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#quienessomos">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#registro">Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#actividades">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!---------------FIN NAVBAR------------------------->
     </header>
     <main>
         <section id="inicio">
-            <h1>Entrená con nosotros y convertite en un verdadero Guerrero</h1>
-            <p>Sea que te apasione el deporte o quieras empezar una actividad física para mejorar tu salud, te inivtamor a conocernos</p>
-            <p>Nos encantaría que te sumes a entrenar con nosotros, por eso eso eligas la actividad que eligas, tu primera clase es gratis</p>
-            <a href=""><button>Sumate</button></a>
+            <div class="row justify-content-center align-items-center my-5">
+                <h1 class="text-center">Entrená con nosotros y convertite en un verdadero Guerrero</h1>
+                <p class="text-center my-3">Sea que te apasione el deporte o quieras empezar una actividad física para mejorar tu salud, te inivtamor a conocernos</p>
+                <p class="text-center my-3">Nos encantaría que te sumes a entrenar con nosotros, por eso eso eligas la actividad que eligas, tu primera clase es gratis</p>
+                <a href="#registro" class="text-center mt-5"><button>Sumate</button></a>
+            </div>
         </section>
         <section id="quienessomos">
-            <h2>¿Quienes somos?</h2>
-            <p>Somos más que un Gimnasio, somos un centro de mútiples deportes. Contamos con los mejores y más dedicados profesionales de distintas areas para brindarte todo aquello que necesites para mejorar tu salud y sentirte cada día mejor.</p>
-            <p>Seas un amante del deporte como nosotros o bien quieras iniciar en este mundo y prácticar una actividad física para mejorar tu salud, contamos con todo el equipamiento y un staff de profesores para indicarte como iniciar o bien para ayudarte a superarte cada día</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="row justify-content-center align-items-center my-5">
+                <h2 class="text-center">¿Quienes somos?</h2>
+                <p class="text-center my-3 px-5">Somos más que un Gimnasio, somos un centro de mútiples deportes. Contamos con los mejores y más dedicados profesionales de distintas areas para brindarte todo aquello que necesites para mejorar tu salud y sentirte cada día mejor.</p>
+                <p class="text-center my-3 px-5">Seas un amante del deporte como nosotros o bien quieras iniciar en este mundo y prácticar una actividad física para mejorar tu salud, contamos con todo el equipamiento y un staff de profesores para indicarte como iniciar o bien para ayudarte a superarte cada día</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </section>
         <section id="registro">
-            <h2>Registration Form</h2>
-    <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
-        <fieldset>
-            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-            <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-        </fieldset>
-        <fieldset>
-            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
-            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
-            <label for="terms-and-conditions">
-            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-            </label>
-        </fieldset>
-        <fieldset>
-            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-            <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-            <label for="referrer">How did you hear about us?
-            <select id="referrer" name="referrer">
-                <option value="">(select one)</option>
-                <option value="1">freeCodeCamp News</option>
-                <option value="2">freeCodeCamp YouTube Channel</option>
-                <option value="3">freeCodeCamp Forum</option>
-                <option value="4">Other</option>
-            </select>
-        </label>
-        <label for="bio">Provide a bio:
-            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-        </label>
-        </fieldset>
-        <input type="submit" value="Submit" />
-    </form>
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="col-md-6">
+                    <h2>Registrate</h2>
+                    <form method="post" action=''>
+                        <fieldset>
+                            <label for="first-name">Nombre: <input id="first-name" name="first-name" type="text" required /></label>
+                            <label for="last-name">Apellido: <input id="last-name" name="last-name" type="text" required /></label>
+                            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="terms-and-conditions">
+                            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />Acepto los <a href="">términos y condiciones</a>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="profile-picture">Subí una foto tuya: <input id="profile-picture" type="file" name="file" /></label>
+                            <label for="age">Ingresá tu edad(en números): <input id="age" type="number" name="age" min="13" max="120" /></label>
+                            <label for="referrer">¿Cómo te enteraste de Spartan Fitness Center?
+                            <select id="referrer" name="referrer">
+                                <option value="">(Seleccioná una)</option>
+                                <option value="1">Facebook</option>
+                                <option value="2">Instagram</option>
+                                <option value="3">Youtube</option>
+                                <option value="4">Otro</option>
+                            </select>
+                        </label>
+                        <label for="bio">Contanos cuales son tus intereses y objetivos:
+                            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Me gustaría..."></textarea>
+                        </label>
+                        </fieldset>
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
         </section>
         <section id="actividades">
 
@@ -79,5 +107,6 @@
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
