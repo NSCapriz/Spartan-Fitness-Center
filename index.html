@@ -211,6 +211,7 @@
                         </div>
                     </div>
                 </div>
+                <!---------------Consultar actividades------------------------->
                 <div class="row my-5 justify-content-center align-items-center border-top border-bottom border-2 py-2">
                     <div class="col-md-6">
                         <h3 class="text-center">
@@ -219,14 +220,74 @@
                         <p class="text-center my-3 px-3"> Ahora conocés nuestras actividades y que implica cada una de ellas. Si te interesó una o varias, podes consultar los precios de cada una.</p>
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-4">
+                                <!---------------aca esta el input para tomar el dato y usar le find con dom------------------------->
                                 <input type="text" id="busquedaActividad" placeholder="Escribí el nombre de la actividad que queres consultar...">
                                 <button type="submit" class="btn btn-dark mt-3" id="buscar"> Buscar</button>
+                                <!---------------Este div de abajo puede servir para mostrar el resultado con js------------------------->
+                                <div class="row justify-content-center align-items-center my-3 text-center display-5 fw-bolder" id="resultadoActividadBuscada">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="presupuesto"></div>
-            </div>
+                <!---------------FIN Consultar actividades------------------------->
+                <!---------------Primera Opción para el presupuesto con inputs------------------------->
+                <div class="row justify-content-center align-items-center my-5">
+                    <h2 class="text-center">Consulta tu presupuesto</h2>
+                    <div class="col-md-3">
+                        <form method="post" action=''>
+                            <fieldset class="my-3">
+                                <div class="mb-3">
+                                    <label for="">Escribí el nombre (o número) de la actividad que queres realizar:<input id="" name="" type="text" required /></label>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Escribí tu genero: <input id="" name="" type="text" required /></label>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">¿Es tu primera vez? (Si/No):<input id="" name="" type="text" required /></label>
+                                </div>
+                            </fieldset>
+                                <button type="submit" class="btn btn-dark mt-3" id=""> Enviar</button>
+                                <div class="text-center display-5 fw-bolder" id=""></div>
+                        </form>
+                    </div>
+                </div>
+                <!---------------FIN Primera opción para el presupuesto------------------------->
+                <!---------------Segunda opción para el presupuesto usando inputs tipo checkbox (Podrias usar booleanos para el codigo de js)------------------------->
+                <div class="row justify-content-center align-items-center my-5">
+                    <div class="col-md-3">
+                        <form method="post" action=''>
+                            <fieldset class="my-3">
+                                <label for="">¿Selecciona la actividad que queres realizar:
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <select id="" name="">
+                                        <option value="" id="">(Seleccioná una)</option>
+                                        <option value="1" id="">Pase libre</option>
+                                        <option value="2" id="">Crossfit</option>
+                                        <option value="3" id="">GAP</option>
+                                        <option value="4" id="">Zumba</option>
+                                    </select>
+                                </div>
+                                </label>
+                            </fieldset>
+                            <fieldset class="my-2 text-center">
+                                <label for="">¿Es tu Primera vez?
+                                <input id="" type="checkbox" required name="" class="mx-2 mb-3" />Si
+                                <input id="" type="checkbox" required name="" class="mx-2 mb-3" />No
+                                </label>
+                            </fieldset>
+                            <fieldset class="my-2 text-center">
+                                <label for="">Selecciona tu Genero:
+                                <input id="" type="checkbox" required name="" class="mx-2 mb-3" />Masculino
+                                <input id="" type="checkbox" required name="" class="mx-2 mb-3" />Femenino
+                                </label>
+                            </fieldset>
+                            <button type="submit" class="btn btn-dark mt-3" id=""> Enviar</button>
+                            <div class="text-center display-5 fw-bolder mb-4" id=""></div>
+                        </form>
+                    </div>
+                </div>
         </section>
         <section id="contacto">
             <h2 class="text-center mb-5">Contacto</h2>
